@@ -850,6 +850,82 @@ export const projects: Project[] = [
 
 export const additionalProjects: Project[] = [
   {
+    slug: 'vendayx-business-management',
+    title: 'VendayX — Business Management Platform',
+    shortTitle: 'VendayX',
+    tagline: 'An all-in-one workspace for managing clients, projects, tasks, and business finances.',
+    description:
+      'A business management application built with React and Python. Its dashboard brings together client and lead management, projects, tasks, time tracking, invoices, payments, expenses, wallet activity, and income streams.',
+    categories: ['Frontend', 'Backend', 'SaaS'],
+    projectType: 'Business Management / SaaS',
+    year: '',
+    image: '/images/projects/vendayx/dashboard.png',
+    imageAspect: 'aspect-[1328/768]',
+    heroImage: '/images/projects/vendayx/dashboard.png',
+    heroImageAspect: 'aspect-[1328/768]',
+    featured: false,
+    technologies: ['React', 'Python'],
+    techGroups: [
+      {
+        label: 'Application',
+        items: [
+          { name: 'React', description: 'Web interface for the business management workspace' },
+          { name: 'Python', description: 'Application and backend technology' },
+        ],
+      },
+    ],
+    links: [],
+    overview:
+      'VendayX is a business management workspace built with React and Python. The dashboard summarizes revenue, expenses, profit, outstanding invoices, active clients and projects, tasks, and tracked hours. The application also provides dedicated areas for clients, leads, projects, tasks, time tracking, invoices, payments, expenses, wallet activity, income streams, calendar, knowledge base, training, and settings.',
+    whatIBuilt: [
+      'Built a business dashboard with revenue, expense, profit, invoice, project, client, task, and time summaries',
+      'Created project and task management views with status, priority, progress, and due-date information',
+      'Added workspace areas for client and lead tracking',
+      'Developed invoice, payment, expense, wallet, and income-stream views',
+      'Included calendar, knowledge base, and training sections',
+    ],
+    role: 'React & Python Business Management Application',
+    responsibilities: [
+      { area: 'Dashboard', detail: 'Present business summaries, activity indicators, and revenue and expense charts' },
+      { area: 'Work Management', detail: 'Organize clients, leads, projects, tasks, and tracked time' },
+      { area: 'Financial Workspace', detail: 'Provide views for invoices, payments, expenses, wallet activity, and income streams' },
+      { area: 'Team Resources', detail: 'Include calendar, knowledge base, training, and application settings' },
+    ],
+    sections: [
+      {
+        heading: 'Business overview',
+        body: 'The dashboard brings key business indicators together, including revenue, expenses, profit, outstanding invoices, active clients and projects, tasks due, and tracked hours. Charts show revenue versus expenses over time and an expense breakdown by category.',
+      },
+      {
+        heading: 'Clients and project delivery',
+        body: 'Dedicated pages organize clients, leads, projects, tasks, and time tracking. The project list presents status, priority, progress, budget, and timing information, while the task board groups work by status.',
+      },
+      {
+        heading: 'Invoices and finances',
+        body: 'Financial areas cover invoices, payments, expenses, wallet transactions, and income streams. The supplied screenshots use demo figures.',
+      },
+      {
+        heading: 'Workspace tools',
+        body: 'The navigation also includes a calendar, knowledge base, training, and settings alongside the main management and finance modules.',
+      },
+    ],
+    features: [
+      { title: 'Business Dashboard', description: 'Summaries and charts for revenue, expenses, profit, outstanding invoices, projects, clients, and tasks.' },
+      { title: 'Client & Lead Tracking', description: 'Dedicated sections for managing client and lead information.' },
+      { title: 'Projects & Tasks', description: 'Project progress and a task board organized by status.' },
+      { title: 'Time Tracking', description: 'Track work time alongside active projects and tasks.' },
+      { title: 'Finance Workspace', description: 'Manage invoices, payments, expenses, wallet activity, and income streams.' },
+      { title: 'Knowledge & Calendar', description: 'Access calendar, knowledge base, and training tools from the same workspace.' },
+    ],
+    gallery: [
+      { src: '/images/projects/vendayx/dashboard.png', caption: 'Business dashboard with financial and activity summaries' },
+      { src: '/images/projects/vendayx/projects.png', caption: 'Project list with status, progress, budget, and timing information' },
+      { src: '/images/projects/vendayx/tasks.png', caption: 'Task board organized by workflow status' },
+      { src: '/images/projects/vendayx/invoices.png', caption: 'Invoice list with issue dates, totals, and payment status' },
+      { src: '/images/projects/vendayx/wallet.png', caption: 'Wallet view with income and expense summaries and transactions' },
+    ],
+  },
+  {
     slug: 'hometown-bookstore',
     title: 'Hometown Book Store',
     shortTitle: 'Hometown Book Store',
