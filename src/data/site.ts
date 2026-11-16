@@ -3,7 +3,7 @@ export const site = {
   role: 'Software Engineer',
   tagline: 'Building backend systems, digital products and AI-powered applications.',
   location: 'Tunisia',
-  email: 'wael.gabsi@example.com',
+  email: 'waelguebsi@outlook.com',
   links: {
     github: 'https://github.com/GABSIWAEL',
     linkedin: 'https://linkedin.com/in/gabsiwael',
