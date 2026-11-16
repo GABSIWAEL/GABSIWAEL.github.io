@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title description">
+  <title id="title">AI GitHub Multi-agent Universal Framework workflow</title>
+  <desc id="description">A high-level diagram from project brief through planning, repository generation, review, CI, and merge.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#111412"/>
+      <stop offset="1" stop-color="#202622"/>
+    </linearGradient>
+    <marker id="arrow" markerHeight="10" markerWidth="10" orient="auto" refX="8" refY="5">
+      <path d="M0 0 10 5 0 10Z" fill="#75847a"/>
+    </marker>
+    <style>
+      .title { fill: #f3f5f3; font: 600 38px Arial, sans-serif; }
+      .subtitle { fill: #aab5ad; font: 18px Arial, sans-serif; }
+      .node-title { fill: #f3f5f3; font: 600 20px Arial, sans-serif; }
+      .node-text { fill: #aab5ad; font: 15px Arial, sans-serif; }
+      .meta { fill: #849188; font: 15px Consolas, monospace; }
+      .line { fill: none; marker-end: url(#arrow); stroke: #75847a; stroke-width: 3; }
+    </style>
+  </defs>
+  <rect height="720" width="1600" fill="url(#background)"/>
+  <path d="M40 95H1560" stroke="#39443d"/>
+  <text class="title" x="80" y="58">AI GitHub Multi-agent Universal Framework</text>
+  <text class="subtitle" x="80" y="145">A project brief becomes a reviewed, CI-checked GitHub repository</text>
+
+  <g>
+    <rect x="80" y="260" width="205" height="170" rx="14" fill="#1d2922" stroke="#5d8a6c" stroke-width="2"/>
+    <text class="node-title" x="105" y="305">Project Form</text>
+    <text class="node-text" x="105" y="345">Requirements</text>
+    <text class="node-text" x="105" y="372">Stack · users · scope</text>
+    <text class="node-text" x="105" y="399">Sprints · visibility</text>
+
+    <rect x="365" y="260" width="205" height="170" rx="14" fill="#24271f" stroke="#b48b4b" stroke-width="2"/>
+    <text class="node-title" x="390" y="305">Plan</text>
+    <text class="node-text" x="390" y="345">Product Owner</text>
+    <text class="node-text" x="390" y="372">Architect</text>
+    <text class="node-text" x="390" y="399">Project specification</text>
+
+    <rect x="650" y="260" width="205" height="170" rx="14" fill="#20252a" stroke="#6b8eb2" stroke-width="2"/>
+    <text class="node-title" x="675" y="305">Generate</text>
+    <text class="node-text" x="675" y="345">Create repository</text>
+    <text class="node-text" x="675" y="372">Build files in groups</text>
+    <text class="node-text" x="675" y="399">Run static checks</text>
+
+    <rect x="935" y="260" width="205" height="170" rx="14" fill="#292322" stroke="#c57c5c" stroke-width="2"/>
+    <text class="node-title" x="960" y="305">Review &amp; Improve</text>
+    <text class="node-text" x="960" y="345">Tech Lead review</text>
+    <text class="node-text" x="960" y="372">Revise reported issues</text>
+    <text class="node-text" x="960" y="399">Docs · Docker · CI/CD</text>
+
+    <rect x="1220" y="260" width="300" height="170" rx="14" fill="#20252a" stroke="#758fc0" stroke-width="2"/>
+    <text class="node-title" x="1245" y="305">Pull Request &amp; CI</text>
+    <text class="node-text" x="1245" y="345">Run GitHub Actions</text>
+    <text class="node-text" x="1245" y="372">Inspect failures · attempt fixes</text>
+    <text class="node-text" x="1245" y="399">Merge on passing checks</text>
+  </g>
+
+  <path class="line" d="M285 345H350"/>
+  <path class="line" d="M570 345H635"/>
+  <path class="line" d="M855 345H920"/>
+  <path class="line" d="M1140 345H1205"/>
+  <path d="M1320 450C1320 530 1035 530 1035 450" fill="none" stroke="#c57c5c" stroke-dasharray="8 8" stroke-width="2"/>
+  <text class="node-text" x="1080" y="560">CI feedback loop</text>
+  <path d="M1370 450V610H470V450" fill="none" stroke="#75847a" stroke-dasharray="8 8" marker-end="url(#arrow)" stroke-width="2"/>
+  <text class="node-text" x="770" y="590">Next sprint, when requested</text>
+
+  <text class="meta" x="80" y="675">n8n · 73 nodes · form, manual, and scheduled triggers</text>
+</svg>
