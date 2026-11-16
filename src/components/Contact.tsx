@@ -1,4 +1,4 @@
-import { Github, Linkedin, Youtube, Mail, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
 import { site } from '@/data/site';
 import { SectionHeading, SectionWrapper } from './SectionHeading';
 import { Reveal } from './Reveal';
@@ -8,7 +8,6 @@ export function Contact() {
     { label: 'Email', value: site.email, href: `mailto:${site.email}`, icon: Mail },
     { label: 'LinkedIn', value: 'in/gabsiwael', href: site.links.linkedin, icon: Linkedin },
     { label: 'GitHub', value: 'GABSIWAEL', href: site.links.github, icon: Github },
-    { label: 'YouTube', value: 'Channel', href: site.links.youtube, icon: Youtube },
   ];
 
   return (
@@ -46,7 +45,7 @@ export function Contact() {
       </div>
 
       <Reveal delay={300}>
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-px bg-ink-100 border border-ink-100">
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-px bg-ink-100 border border-ink-100">
           {contacts.map((c) => (
             <a
               key={c.label}

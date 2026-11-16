@@ -1,4 +1,4 @@
-import { Github, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import { Github, Linkedin, ArrowRight } from 'lucide-react';
 import { site } from '@/data/site';
 import { Reveal } from './Reveal';
 
@@ -91,22 +91,13 @@ export function Hero() {
                     LinkedIn
                     <Linkedin size={14} className="text-ink-300 group-hover:text-ink-950 transition-colors" />
                   </a>
-                  <a
-                    href={site.links.youtube}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-2 text-sm text-ink-500 hover:text-ink-950 transition-colors duration-300"
-                  >
-                    YouTube
-                    <Youtube size={14} className="text-ink-300 group-hover:text-ink-950 transition-colors" />
-                  </a>
                 </div>
 
                 <div className="mt-6 w-full max-w-[200px] border-t border-ink-100 pt-5">
                   <div className="space-y-2">
                     <MetaRow label="Stack" value=".NET / Java / React" />
                     <MetaRow label="Focus" value="Distributed Systems" />
-                    <MetaRow label="Content" value="Engineering / YouTube" />
+                    <MetaRow label="Content" value="Engineering / LinkedIn" />
                   </div>
                 </div>
               </div>

@@ -1,11 +1,10 @@
-import { Github, Linkedin, Youtube, ArrowUpRight } from 'lucide-react';
+import { Github, Linkedin, ArrowUpRight } from 'lucide-react';
 import { site } from '@/data/site';
 
 export function Footer() {
   const socials = [
     { label: 'GitHub', href: site.links.github, icon: Github },
     { label: 'LinkedIn', href: site.links.linkedin, icon: Linkedin },
-    { label: 'YouTube', href: site.links.youtube, icon: Youtube },
   ];
 
   return (

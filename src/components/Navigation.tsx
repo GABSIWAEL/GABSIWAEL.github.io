@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Github, Linkedin, Youtube } from 'lucide-react';
+import { Menu, X, Github, Linkedin } from 'lucide-react';
 import { site, navLinks, externalLinks } from '@/data/site';
 
 export function Navigation() {
@@ -60,7 +60,6 @@ export function Navigation() {
                 >
                   {link.label === 'GitHub' && <Github size={16} />}
                   {link.label === 'LinkedIn' && <Linkedin size={16} />}
-                  {link.label === 'YouTube' && <Youtube size={16} />}
                 </a>
               ))}
             </div>
@@ -118,7 +117,6 @@ export function Navigation() {
                   >
                     {link.label === 'GitHub' && <Github size={18} />}
                     {link.label === 'LinkedIn' && <Linkedin size={18} />}
-                    {link.label === 'YouTube' && <Youtube size={18} />}
                   </a>
                 ))}
               </div>

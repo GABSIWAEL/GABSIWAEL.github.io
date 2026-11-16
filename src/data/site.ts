@@ -7,7 +7,6 @@ export const site = {
   links: {
     github: 'https://github.com/GABSIWAEL',
     linkedin: 'https://linkedin.com/in/gabsiwael',
-    youtube: 'https://www.youtube.com/channel/UC_ujCNCxw89k40uR-PIww9w',
   },
   available: true,
 };
@@ -26,5 +25,4 @@ export const navLinks = [
 export const externalLinks = [
   { label: 'GitHub', href: site.links.github },
   { label: 'LinkedIn', href: site.links.linkedin },
-  { label: 'YouTube', href: site.links.youtube },
 ];
