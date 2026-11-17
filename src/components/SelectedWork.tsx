@@ -39,8 +39,7 @@ export function SelectedWork() {
 
 function FeaturedProject({ project, index }: { project: Project; index: number }) {
   const isFull = project.featuredLayout === 'full';
-  const isLargeLeft = project.featuredLayout === 'large-left';
-  const isReversed = isLargeLeft && index % 2 === 1;
+  const isReversed = index % 2 === 1;
 
   if (isFull) {
     return <FullWidthProject project={project} />;

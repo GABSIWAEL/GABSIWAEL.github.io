@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="background" x1="110" y1="60" x2="1470" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6F8FD"/>
+      <stop offset="1" stop-color="#E9F0FA"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="992" y1="204" x2="1325" y2="676" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2674EC"/>
+      <stop offset="1" stop-color="#1849B6"/>
+    </linearGradient>
+    <filter id="shadow" x="623" y="132" width="894" height="680" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <circle cx="188" cy="785" r="278" fill="#DCE9F9"/>
+  <circle cx="1408" cy="105" r="256" fill="#DEE9F7"/>
+  <path d="M0 699C288 638 491 799 757 736C1041 670 1292 753 1600 621V900H0V699Z" fill="#E2EAF5"/>
+  <g opacity=".5" stroke="#D3DFEF">
+    <path d="M0 130H1600M0 220H1600M0 310H1600M0 400H1600M0 490H1600M0 580H1600M0 670H1600M0 760H1600"/>
+    <path d="M120 0V900M240 0V900M360 0V900M480 0V900M600 0V900M720 0V900M840 0V900M960 0V900M1080 0V900M1200 0V900M1320 0V900M1440 0V900"/>
+  </g>
+  <text x="104" y="144" fill="#3970C0" font-family="Arial, sans-serif" font-size="23" font-weight="700" letter-spacing="5">DRIVING EDUCATION PLATFORM</text>
+  <text x="100" y="275" fill="#14233D" font-family="Arial, sans-serif" font-size="78" font-weight="700">PermisMaroc</text>
+  <text x="104" y="340" fill="#405574" font-family="Arial, sans-serif" font-size="30">Learn the rules. Practice with confidence.</text>
+  <text x="104" y="400" fill="#6D7F99" font-family="Arial, sans-serif" font-size="23">Road safety lessons and practice tests,</text>
+  <text x="104" y="436" fill="#6D7F99" font-family="Arial, sans-serif" font-size="23">with learner progress and content management.</text>
+  <rect x="102" y="512" width="236" height="60" rx="16" fill="#2169DA"/>
+  <text x="135" y="550" fill="#fff" font-family="Arial, sans-serif" font-size="19" font-weight="700">START LEARNING</text>
+  <circle cx="372" cy="542" r="29" fill="#fff" stroke="#D2DEED" stroke-width="2"/>
+  <path d="m363 542 7 7 13-15" stroke="#3474D4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="679" y="165" width="790" height="565" rx="30" fill="#65758D" fill-opacity=".18" filter="url(#shadow)"/>
+  <rect x="672" y="142" width="802" height="574" rx="28" fill="#fff" stroke="#D9E3F0" stroke-width="2"/>
+  <path d="M700 142h746a28 28 0 0 1 28 28v55H672v-55a28 28 0 0 1 28-28Z" fill="#F8FAFD"/>
+  <circle cx="711" cy="196" r="7" fill="#D2DCEB"/>
+  <circle cx="737" cy="196" r="7" fill="#D2DCEB"/>
+  <text x="784" y="203" fill="#263956" font-family="Arial, sans-serif" font-size="18" font-weight="700">LEARNER DASHBOARD</text>
+  <rect x="711" y="255" width="290" height="410" rx="18" fill="#F4F7FC"/>
+  <text x="744" y="301" fill="#6E8099" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">YOUR LEARNING PATH</text>
+  <circle cx="856" cy="423" r="80" stroke="#DCE6F3" stroke-width="15"/>
+  <path d="M856 343a80 80 0 0 1 76 55" stroke="#2B71DF" stroke-width="15" stroke-linecap="round"/>
+  <text x="817" y="431" fill="#1C3458" font-family="Arial, sans-serif" font-size="36" font-weight="700">01</text>
+  <text x="816" y="463" fill="#8393A9" font-family="Arial, sans-serif" font-size="15">LESSON</text>
+  <rect x="745" y="546" width="220" height="12" rx="6" fill="#E0E7F1"/>
+  <rect x="745" y="546" width="147" height="12" rx="6" fill="#2B71DF"/>
+  <text x="745" y="591" fill="#526680" font-family="Arial, sans-serif" font-size="15">Road signs and priorities</text>
+  <rect x="1026" y="255" width="415" height="410" rx="18" fill="#fff" stroke="#E3EAF3"/>
+  <text x="1059" y="301" fill="#8191A6" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">PRACTICE QUESTION</text>
+  <text x="1059" y="352" fill="#1C2D49" font-family="Arial, sans-serif" font-size="24" font-weight="700">At an intersection,</text>
+  <text x="1059" y="385" fill="#1C2D49" font-family="Arial, sans-serif" font-size="24" font-weight="700">which driver has priority?</text>
+  <rect x="1058" y="424" width="351" height="55" rx="12" fill="#F7F9FC" stroke="#E0E7F0"/>
+  <circle cx="1084" cy="451" r="10" fill="#fff" stroke="#A8B6C8" stroke-width="2"/>
+  <text x="1111" y="458" fill="#64768F" font-family="Arial, sans-serif" font-size="17">The vehicle on the right</text>
+  <rect x="1058" y="493" width="351" height="55" rx="12" fill="#EAF2FE" stroke="#5590E9" stroke-width="2"/>
+  <circle cx="1084" cy="520" r="10" fill="#2D70D9"/>
+  <path d="m1080 520 3 3 6-7" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1111" y="527" fill="#244B86" font-family="Arial, sans-serif" font-size="17" font-weight="700">As indicated by the sign</text>
+  <rect x="1058" y="573" width="351" height="55" rx="12" fill="#2169DA"/>
+  <text x="1177" y="608" fill="#fff" font-family="Arial, sans-serif" font-size="17" font-weight="700">CHECK ANSWER</text>
+  <text x="104" y="824" fill="#7688A2" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">ILLUSTRATIVE COVER - NOT A PRODUCT SCREENSHOT</text>
+</svg>

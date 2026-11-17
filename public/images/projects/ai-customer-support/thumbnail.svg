@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="background" x1="120" y1="70" x2="1450" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1426"/>
+      <stop offset="1" stop-color="#101D35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="1050" y1="175" x2="1420" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#538BFF"/>
+      <stop offset="1" stop-color="#8B6BFF"/>
+    </linearGradient>
+    <filter id="shadow" x="555" y="115" width="930" height="690" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#background)"/>
+  <circle cx="1280" cy="210" r="290" fill="#326AE7" fill-opacity=".12"/>
+  <circle cx="1275" cy="680" r="240" fill="#795CEB" fill-opacity=".12"/>
+  <path d="M0 735C300 640 495 830 790 732C1050 646 1300 752 1600 610V900H0V735Z" fill="#101A2D"/>
+  <g opacity=".18" stroke="#7C93B9">
+    <path d="M0 120H1600M0 210H1600M0 300H1600M0 390H1600M0 480H1600M0 570H1600M0 660H1600M0 750H1600"/>
+    <path d="M120 0V900M240 0V900M360 0V900M480 0V900M600 0V900M720 0V900M840 0V900M960 0V900M1080 0V900M1200 0V900M1320 0V900M1440 0V900"/>
+  </g>
+  <text x="105" y="145" fill="#92A5C4" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="5">AI CUSTOMER SUPPORT</text>
+  <text x="100" y="265" fill="#F5F7FC" font-family="Arial, sans-serif" font-size="68" font-weight="700">Answers with</text>
+  <text x="100" y="342" fill="#F5F7FC" font-family="Arial, sans-serif" font-size="68" font-weight="700">the right context.</text>
+  <text x="104" y="405" fill="#9EACC4" font-family="Arial, sans-serif" font-size="26">A client-grounded support experience</text>
+  <text x="104" y="443" fill="#9EACC4" font-family="Arial, sans-serif" font-size="26">powered by an AI and API architecture.</text>
+  <rect x="104" y="514" width="184" height="54" rx="27" fill="#182945" stroke="#34598D"/>
+  <circle cx="134" cy="541" r="8" fill="#73A7FF"/>
+  <text x="154" y="550" fill="#D6E4FF" font-family="Arial, sans-serif" font-size="19" font-weight="700">CLIENT CONTEXT</text>
+  <rect x="104" y="595" width="213" height="54" rx="27" fill="#201F3D" stroke="#55418F"/>
+  <path d="M130 617h14v14h-14zM134 613h14v14h-14" stroke="#B5A2FF" stroke-width="2" stroke-linejoin="round"/>
+  <text x="162" y="631" fill="#E0D9FF" font-family="Arial, sans-serif" font-size="19" font-weight="700">LLAMA 3.1</text>
+  <rect x="590" y="152" width="830" height="570" rx="24" fill="#050914" fill-opacity=".42" filter="url(#shadow)"/>
+  <rect x="610" y="142" width="815" height="582" rx="22" fill="#111B2E" stroke="#34445F" stroke-width="2"/>
+  <path d="M632 142h771a22 22 0 0 1 22 22v49H610v-49a22 22 0 0 1 22-22Z" fill="#19263B"/>
+  <circle cx="644" cy="182" r="7" fill="#F07878"/>
+  <circle cx="668" cy="182" r="7" fill="#E7B763"/>
+  <circle cx="692" cy="182" r="7" fill="#61C6A0"/>
+  <text x="736" y="190" fill="#DCE5F5" font-family="Arial, sans-serif" font-size="19" font-weight="700">SUPPORT WORKSPACE</text>
+  <rect x="640" y="242" width="178" height="420" rx="14" fill="#17243A"/>
+  <text x="664" y="284" fill="#8397B5" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2">KNOWLEDGE</text>
+  <rect x="660" y="310" width="137" height="62" rx="10" fill="#223453"/>
+  <circle cx="681" cy="341" r="10" fill="#69A5FF"/>
+  <path d="M677 341h8M681 337v8" stroke="#0E1A2E" stroke-width="2"/>
+  <text x="700" y="337" fill="#E3ECFA" font-family="Arial, sans-serif" font-size="15" font-weight="700">Client guide</text>
+  <text x="700" y="357" fill="#8EA2BE" font-family="Arial, sans-serif" font-size="13">12 documents</text>
+  <rect x="660" y="388" width="137" height="62" rx="10" fill="#1B2A41"/>
+  <path d="M674 413h15M674 421h19M674 429h12" stroke="#95A9C6" stroke-width="2" stroke-linecap="round"/>
+  <text x="700" y="415" fill="#C5D1E2" font-family="Arial, sans-serif" font-size="15" font-weight="700">Policies</text>
+  <text x="700" y="435" fill="#8EA2BE" font-family="Arial, sans-serif" font-size="13">Updated today</text>
+  <text x="650" y="485" fill="#8397B5" font-family="Arial, sans-serif" font-size="14">API</text>
+  <text x="689" y="485" fill="#C5D1E2" font-family="Arial, sans-serif" font-size="14">WORKERS</text>
+  <text x="650" y="524" fill="#8397B5" font-family="Arial, sans-serif" font-size="14">OBSERVABILITY</text>
+  <rect x="845" y="242" width="550" height="420" rx="14" fill="#0E1728" stroke="#283752"/>
+  <text x="875" y="283" fill="#E6EDF8" font-family="Arial, sans-serif" font-size="20" font-weight="700">How can I update my account details?</text>
+  <rect x="1050" y="315" width="314" height="78" rx="16" fill="#1D3151"/>
+  <text x="1074" y="347" fill="#CEDAF0" font-family="Arial, sans-serif" font-size="16">I need to change the contact email</text>
+  <text x="1074" y="371" fill="#CEDAF0" font-family="Arial, sans-serif" font-size="16">on my organization profile.</text>
+  <circle cx="878" cy="431" r="18" fill="url(#accent)"/>
+  <path d="M870 431h16M878 423v16" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+  <text x="909" y="424" fill="#98AACC" font-family="Arial, sans-serif" font-size="14" font-weight="700">GROUNDED RESPONSE</text>
+  <rect x="908" y="442" width="450" height="114" rx="14" fill="#16253A" stroke="#304462"/>
+  <text x="932" y="477" fill="#E5EDF9" font-family="Arial, sans-serif" font-size="17">You can update the email from your</text>
+  <text x="932" y="503" fill="#E5EDF9" font-family="Arial, sans-serif" font-size="17">organization settings. Here is the relevant</text>
+  <text x="932" y="529" fill="#E5EDF9" font-family="Arial, sans-serif" font-size="17">section from your account guide.</text>
+  <rect x="908" y="578" width="190" height="36" rx="18" fill="#1C2940"/>
+  <circle cx="929" cy="596" r="6" fill="#60C6A0"/>
+  <text x="945" y="602" fill="#AFC0D8" font-family="Arial, sans-serif" font-size="13">Context attached</text>
+  <text x="105" y="824" fill="#6F809B" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">ILLUSTRATIVE COVER - NOT A PRODUCT SCREENSHOT</text>
+</svg>

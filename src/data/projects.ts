@@ -63,7 +63,7 @@ export interface Project {
   projectType: string;
   year: string;
   image: string;
-  hasThumbnail?: boolean;
+  thumbnailType?: 'illustration';
   imageAspect?: string;
   heroImage?: string;
   heroImageAspect?: string;
@@ -290,9 +290,9 @@ export const projects: Project[] = [
     categories: ['AI', 'Backend', 'DevOps'],
     projectType: 'AI / SaaS',
     year: '2024',
-    image: '/images/projects/ai-customer-support.jpg',
-    hasThumbnail: false,
-    heroImage: '/images/projects/ai-customer-support/hero.jpg',
+    image: '/images/projects/ai-customer-support/thumbnail.svg',
+    thumbnailType: 'illustration',
+    heroImage: '/images/projects/ai-customer-support/thumbnail.svg',
     featured: true,
     featuredLayout: 'large-left',
     technologies: [
@@ -407,11 +407,7 @@ export const projects: Project[] = [
         why: 'Grounding the model in client-specific context ensures answers are accurate and relevant to the client\'s domain.',
       },
     ],
-    gallery: [
-      { src: '/images/projects/ai-customer-support/interface.jpg', caption: 'Support agent interface' },
-      { src: '/images/projects/ai-customer-support/architecture.jpg', caption: 'AI architecture diagram' },
-      { src: '/images/projects/ai-customer-support/monitoring.jpg', caption: 'Model monitoring dashboard' },
-    ],
+    gallery: [],
     youtubeVideoIds: [],
     relatedProjectSlugs: ['stb-baas', 'saas-erp'],
   },
@@ -425,9 +421,9 @@ export const projects: Project[] = [
     categories: ['Frontend', 'Backend', 'Education'],
     projectType: 'Web Platform / Education',
     year: '2023',
-    image: '/images/projects/permis-maroc.jpg',
-    hasThumbnail: false,
-    heroImage: '/images/projects/permis-maroc/hero.jpg',
+    image: '/images/projects/permis-maroc/thumbnail.svg',
+    thumbnailType: 'illustration',
+    heroImage: '/images/projects/permis-maroc/thumbnail.svg',
     featured: true,
     featuredLayout: 'large-right',
     technologies: ['Spring Boot', 'Angular', 'PHP', 'Jenkins', 'Cloudflare'],
@@ -506,11 +502,7 @@ export const projects: Project[] = [
       { title: 'Automated CI/CD', description: 'Jenkins pipeline for consistent builds and deployments.' },
       { title: 'CDN & Security', description: 'Cloudflare provides caching, WAF, and DDoS protection at the edge.' },
     ],
-    gallery: [
-      { src: '/images/projects/permis-maroc/learner.jpg', caption: 'Learner interface' },
-      { src: '/images/projects/permis-maroc/tests.jpg', caption: 'Practice test engine' },
-      { src: '/images/projects/permis-maroc/admin.jpg', caption: 'Admin content management' },
-    ],
+    gallery: [],
     youtubeVideoIds: ['n7eY6gRtGdc', 'W-X32NvRFs4'],
     relatedProjectSlugs: ['stb-baas', 'campusone'],
   },
@@ -646,9 +638,8 @@ export const projects: Project[] = [
     categories: ['Mobile', 'Frontend', 'Social'],
     projectType: 'Mobile / Social',
     year: '2023',
-    image: '/pictures/one.jpeg',
-    hasThumbnail: false,
-    heroImage: '/pictures/one.jpeg',
+    image: '/images/projects/event-map/map.jpeg',
+    heroImage: '/images/projects/event-map/map.jpeg',
     featured: false,
     technologies: ['React', 'Maps API'],
     techGroups: [
@@ -697,9 +688,9 @@ export const projects: Project[] = [
       { title: 'Social Interaction', description: 'Discussions and community engagement built around shared event experiences.' },
     ],
     gallery: [
-      { src: '/pictures/one.jpeg', caption: 'Interactive event map' },
-      { src: '/pictures/two.jpeg', caption: 'Event discovery view' },
-      { src: '/pictures/chat.jpeg', caption: 'Event discussion' },
+      { src: '/images/projects/event-map/map.jpeg', caption: 'Interactive event map' },
+      { src: '/images/projects/event-map/discovery.jpeg', caption: 'Event discovery view' },
+      { src: '/images/projects/event-map/discussion.jpeg', caption: 'Event discussion' },
     ],
     youtubeVideoIds: [],
     relatedProjectSlugs: ['campusone', 'permis-maroc'],
@@ -1813,60 +1804,6 @@ export const additionalProjects: Project[] = [
     ],
   },
   {
-    slug: 'hr-management-platform',
-    title: 'HR Management Platform',
-    shortTitle: 'HR Platform',
-    tagline: '',
-    description: 'A human resources management platform. Details to be added.',
-    categories: ['Backend', 'SaaS'],
-    projectType: 'Enterprise / HR',
-    year: '',
-    image: '/images/projects/hr-management.jpg',
-    hasThumbnail: false,
-    featured: false,
-    technologies: [],
-    links: [],
-    overview: '',
-    whatIBuilt: [],
-    role: '',
-  },
-  {
-    slug: 'event-capture',
-    title: 'Event Capture',
-    shortTitle: 'Event Capture',
-    tagline: '',
-    description: 'A system for capturing and processing events. Details to be added.',
-    categories: ['Backend', 'Architecture'],
-    projectType: 'Backend / Event System',
-    year: '',
-    image: '/images/projects/event-capture.jpg',
-    hasThumbnail: false,
-    featured: false,
-    technologies: [],
-    links: [],
-    overview: '',
-    whatIBuilt: [],
-    role: '',
-  },
-  {
-    slug: 'mobile-recommender',
-    title: 'Mobile Recommender',
-    shortTitle: 'Recommender',
-    tagline: '',
-    description: 'A mobile recommender application. Details to be added.',
-    categories: ['Mobile', 'AI'],
-    projectType: 'Mobile / AI',
-    year: '',
-    image: '/images/projects/mobile-recommender.jpg',
-    hasThumbnail: false,
-    featured: false,
-    technologies: [],
-    links: [],
-    overview: '',
-    whatIBuilt: [],
-    role: '',
-  },
-  {
     slug: 'euro-route-flow',
     title: 'EURO-ROUTE-FLOW',
     shortTitle: 'Euro Route Flow',
@@ -1979,24 +1916,6 @@ export const additionalProjects: Project[] = [
       { src: '/images/projects/euro-route-flow/screenshot-13.png', caption: 'Exported delivery report in Excel' },
       { src: '/images/projects/euro-route-flow/screenshot-14.png', caption: 'Driver performance dashboard' },
     ],
-  },
-  {
-    slug: 'target-suijet',
-    title: 'Target-Suijet',
-    shortTitle: 'Target-Suijet',
-    tagline: '',
-    description: 'A targeting and automation project. Details to be added.',
-    categories: ['Backend'],
-    projectType: 'Software / Automation',
-    year: '',
-    image: '/images/projects/target-suijet.jpg',
-    hasThumbnail: false,
-    featured: false,
-    technologies: [],
-    links: [],
-    overview: '',
-    whatIBuilt: [],
-    role: '',
   },
   {
     slug: 'wine-quality-prediction-machine-learning-model',
@@ -2476,7 +2395,7 @@ export const n8nAutomationProjects = allProjects.filter((project) =>
 export const projectLibraryProjects = allProjects.filter((project) =>
   !project.categories.includes('Machine Learning') &&
   !project.categories.includes('Automation')
-).sort((a, b) => Number(a.hasThumbnail === false) - Number(b.hasThumbnail === false));
+).sort((a, b) => Number(a.thumbnailType === 'illustration') - Number(b.thumbnailType === 'illustration'));
 
 export function getProject(slug: string): Project | undefined {
   return allProjects.find((p) => p.slug === slug);
