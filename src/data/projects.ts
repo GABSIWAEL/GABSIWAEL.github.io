@@ -63,6 +63,7 @@ export interface Project {
   projectType: string;
   year: string;
   image: string;
+  hasThumbnail?: boolean;
   imageAspect?: string;
   heroImage?: string;
   heroImageAspect?: string;
@@ -290,6 +291,7 @@ export const projects: Project[] = [
     projectType: 'AI / SaaS',
     year: '2024',
     image: '/images/projects/ai-customer-support.jpg',
+    hasThumbnail: false,
     heroImage: '/images/projects/ai-customer-support/hero.jpg',
     featured: true,
     featuredLayout: 'large-left',
@@ -424,6 +426,7 @@ export const projects: Project[] = [
     projectType: 'Web Platform / Education',
     year: '2023',
     image: '/images/projects/permis-maroc.jpg',
+    hasThumbnail: false,
     heroImage: '/images/projects/permis-maroc/hero.jpg',
     featured: true,
     featuredLayout: 'large-right',
@@ -644,6 +647,7 @@ export const projects: Project[] = [
     projectType: 'Mobile / Social',
     year: '2023',
     image: '/pictures/one.jpeg',
+    hasThumbnail: false,
     heroImage: '/pictures/one.jpeg',
     featured: false,
     technologies: ['React', 'Maps API'],
@@ -1725,6 +1729,7 @@ export const additionalProjects: Project[] = [
     projectType: 'Enterprise / HR',
     year: '',
     image: '/images/projects/hr-management.jpg',
+    hasThumbnail: false,
     featured: false,
     technologies: [],
     links: [],
@@ -1742,6 +1747,7 @@ export const additionalProjects: Project[] = [
     projectType: 'Backend / Event System',
     year: '',
     image: '/images/projects/event-capture.jpg',
+    hasThumbnail: false,
     featured: false,
     technologies: [],
     links: [],
@@ -1759,6 +1765,7 @@ export const additionalProjects: Project[] = [
     projectType: 'Mobile / AI',
     year: '',
     image: '/images/projects/mobile-recommender.jpg',
+    hasThumbnail: false,
     featured: false,
     technologies: [],
     links: [],
@@ -1890,6 +1897,7 @@ export const additionalProjects: Project[] = [
     projectType: 'Software / Automation',
     year: '',
     image: '/images/projects/target-suijet.jpg',
+    hasThumbnail: false,
     featured: false,
     technologies: [],
     links: [],
@@ -2375,7 +2383,7 @@ export const n8nAutomationProjects = allProjects.filter((project) =>
 export const projectLibraryProjects = allProjects.filter((project) =>
   !project.categories.includes('Machine Learning') &&
   !project.categories.includes('Automation')
-);
+).sort((a, b) => Number(a.hasThumbnail === false) - Number(b.hasThumbnail === false));
 
 export function getProject(slug: string): Project | undefined {
   return allProjects.find((p) => p.slug === slug);
