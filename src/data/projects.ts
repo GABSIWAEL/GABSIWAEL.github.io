@@ -850,6 +850,64 @@ export const projects: Project[] = [
 
 export const additionalProjects: Project[] = [
   {
+    slug: 'gabsi-dev',
+    title: 'Gabsi Dev — Engineering Software Website',
+    shortTitle: 'Gabsi Dev',
+    tagline: 'A French-language website presenting custom engineering software, digital solutions, and applied AI.',
+    description:
+      'A React and Vite company website for Gabsi Dev, presenting its engineering software expertise, services, target industries, and an AI construction product concept.',
+    categories: ['Frontend', 'AI'],
+    projectType: 'Company Website / Product Showcase',
+    year: '',
+    image: '/images/projects/gabsi-dev/cover.png',
+    imageAspect: 'aspect-[16/7]',
+    heroImage: '/images/projects/gabsi-dev/cover.png',
+    heroImageAspect: 'aspect-[16/7]',
+    featured: false,
+    technologies: ['React', 'Vite'],
+    links: [],
+    overview:
+      'Gabsi Dev is a French-language company website for an engineering software and digital solutions business. It presents four areas of expertise — firmware, custom software, engineering extensions, and AI — alongside solutions, target industries, the company vision, and contact information. The site also introduces an AI Construction concept with an interactive workflow demonstration marked as a prototype.',
+    whatIBuilt: [
+      'Built the company website with React and Vite',
+      'Presented the company, its engineering expertise, solutions, target industries, and vision',
+      'Showcased an AI Construction concept through mobile, dashboard, and workflow visuals',
+      'Included an interactive workflow demo clearly identified as a prototype',
+    ],
+    role: 'Frontend Developer — React / Vite',
+    responsibilities: [
+      { area: 'Website', detail: 'Developed the French-language company website using React and Vite' },
+      { area: 'Company & Services', detail: 'Presented the company, technical expertise, solutions, and target industries' },
+      { area: 'Product Showcase', detail: 'Created a visual presentation and prototype demo for the AI Construction concept' },
+    ],
+    status: 'Company website with an AI Construction prototype demo',
+    sections: [
+      {
+        heading: 'Company and engineering expertise',
+        body: 'The site introduces Gabsi Dev and presents its work across firmware, custom software, engineering extensions, and artificial intelligence.',
+      },
+      {
+        heading: 'AI Construction concept',
+        body: 'The product showcase illustrates a construction workflow for capturing site activity, tracking progress, and generating reports. Its interactive demo is explicitly presented as a prototype, with no live AI connection.',
+      },
+    ],
+    features: [
+      { title: 'Engineering Expertise', description: 'Four areas covering firmware, custom software, engineering extensions, and AI.' },
+      { title: 'Solutions & Industries', description: 'Sections describing example solutions and the industries Gabsi Dev serves.' },
+      { title: 'AI Construction Showcase', description: 'Mobile and dashboard visuals present a concept for structuring construction-site activity and reporting.' },
+      { title: 'Interactive Prototype', description: 'A step-by-step workflow demo illustrates the proposed user experience without connecting to real AI.' },
+    ],
+    gallery: [
+      { src: '/images/projects/gabsi-dev/expertise.png', caption: 'Engineering expertise' },
+      { src: '/images/projects/gabsi-dev/approach.png', caption: 'The Gabsi Dev approach' },
+      { src: '/images/projects/gabsi-dev/dashboard.png', caption: 'AI Construction dashboard concept' },
+      { src: '/images/projects/gabsi-dev/ai-construction.png', caption: 'AI Construction product showcase' },
+      { src: '/images/projects/gabsi-dev/workflow-demo.png', caption: 'Interactive workflow prototype' },
+      { src: '/images/projects/gabsi-dev/industries.png', caption: 'Target industries' },
+      { src: '/images/projects/gabsi-dev/contact.png', caption: 'Contact section' },
+    ],
+  },
+  {
     slug: 'vendayx-business-management',
     title: 'VendayX — Business Management Platform',
     shortTitle: 'VendayX',
