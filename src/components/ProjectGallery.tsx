@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ChevronLeft, ChevronRight, ZoomIn } from 'lucide-react';
 import type { GalleryImage } from '@/data/projects';
 import { SmartImage } from './SmartImage';
@@ -85,7 +86,7 @@ export function ProjectGallery({ images, projectName }: ProjectGalleryProps) {
         ))}
       </div>
 
-      {isOpen && (
+      {isOpen && createPortal(
         <div
           className="fixed inset-0 z-[80] bg-ink-950/95 backdrop-blur-sm flex items-center justify-center animate-fade-in"
           onClick={close}
@@ -134,7 +135,8 @@ export function ProjectGallery({ images, projectName }: ProjectGalleryProps) {
               {lightboxIndex! + 1} / {images.length}
             </p>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </>
   );
