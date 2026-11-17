@@ -72,7 +72,7 @@ export function ProjectGallery({ images, projectName }: ProjectGalleryProps) {
                 fallbackLabel={projectName}
                 fallbackSublabel={img.caption || `Screenshot ${i + 1}`}
                 className="border border-ink-100 transition-all duration-500 ease-out-expo group-hover:shadow-lg group-hover:shadow-ink-950/5"
-                imgClassName="group-hover:scale-[1.02] transition-transform duration-700 ease-out-expo"
+                imgClassName="object-contain group-hover:scale-[1.02] transition-transform duration-700 ease-out-expo"
               />
               <div className="absolute inset-0 flex items-end justify-between p-4 bg-gradient-to-t from-ink-950/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 {img.caption && (
@@ -120,13 +120,10 @@ export function ProjectGallery({ images, projectName }: ProjectGalleryProps) {
             className="relative max-w-[90vw] max-h-[85vh] flex flex-col items-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <SmartImage
+            <img
               src={images[lightboxIndex!].src}
               alt={images[lightboxIndex!].caption || `${projectName} screenshot ${lightboxIndex! + 1}`}
-              aspect="aspect-auto"
-              fallbackLabel={projectName}
-              fallbackSublabel={images[lightboxIndex!].caption}
-              className="max-h-[78vh] border border-ink-800"
+              className="block max-w-[90vw] max-h-[78vh] w-auto h-auto object-contain border border-ink-800"
             />
             {images[lightboxIndex!].caption && (
               <p className="mt-4 text-sm font-mono text-ink-0/70 text-center">
