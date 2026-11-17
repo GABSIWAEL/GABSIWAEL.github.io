@@ -854,6 +854,99 @@ export const projects: Project[] = [
 
 export const additionalProjects: Project[] = [
   {
+    slug: 'auto-elec-tunis',
+    title: 'Auto Elec Tunis — Automotive Services Platform',
+    shortTitle: 'Auto Elec Tunis',
+    tagline: 'A client website for automotive diagnostics, electrical services, appointments, and accessories.',
+    description:
+      'A full-stack client project for Auto Elec Tunis, built with React, a Python backend, and PostgreSQL. The French-language platform presents automotive services, supports appointment requests, and includes an accessories storefront and WhatsApp contact options.',
+    categories: ['Frontend', 'Backend', 'E-commerce'],
+    projectType: 'Client Project / Automotive Services',
+    year: '',
+    image: '/images/projects/auto-elec-tunis/screenshot-01.png',
+    imageAspect: 'aspect-[2/1]',
+    heroImage: '/images/projects/auto-elec-tunis/screenshot-01.png',
+    heroImageAspect: 'aspect-[2/1]',
+    featured: false,
+    technologies: ['React', 'Python', 'PostgreSQL'],
+    techGroups: [
+      {
+        label: 'Frontend',
+        items: [{ name: 'React', description: 'Customer-facing website and interactive service flows' }],
+      },
+      {
+        label: 'Backend',
+        items: [{ name: 'Python', description: 'Application backend' }],
+      },
+      {
+        label: 'Database',
+        items: [{ name: 'PostgreSQL', description: 'Relational data storage' }],
+      },
+    ],
+    links: [],
+    overview:
+      'Auto Elec Tunis is a client project for an automotive electrical and diagnostics business. The French-language website helps customers discover electronic diagnostics, electrical repair, accessory installation, and related services. It also presents an accessories storefront, a multi-step appointment request, and direct WhatsApp contact. The storefront includes search and filtering controls; the supplied screenshots show its empty-catalog state at the time of capture.',
+    whatIBuilt: [
+      'Built the customer-facing website with React',
+      'Implemented the application backend in Python and used PostgreSQL for data storage',
+      'Created service discovery pages for automotive diagnostics, electrical repair, and accessory installation',
+      'Developed a multi-step appointment request covering customer details, vehicle, issue, and preferred time',
+      'Built an accessories storefront interface with search, category, availability, and sorting controls',
+      'Added direct WhatsApp contact options throughout the customer journey',
+    ],
+    role: 'Full-Stack Developer — Client Project',
+    responsibilities: [
+      { area: 'Frontend', detail: 'Built the React website for service discovery, appointments, and the accessories storefront' },
+      { area: 'Backend & Data', detail: 'Developed the backend with Python and used PostgreSQL for application data' },
+      { area: 'Customer Journey', detail: 'Presented automotive services and connected appointment requests with direct contact options' },
+    ],
+    status: 'Client project',
+    sections: [
+      {
+        heading: 'Service discovery',
+        body: 'Customers can explore electronic vehicle diagnostics, electrical fault finding, charging-system checks, accessory installation, lighting, multimedia equipment, and parking sensors.',
+      },
+      {
+        heading: 'Appointments and contact',
+        body: 'The appointment flow guides customers through contact details, vehicle information, the issue, a preferred time slot, and confirmation. WhatsApp contact is also surfaced as a direct support option.',
+      },
+      {
+        heading: 'Storefront and technical stack',
+        body: 'The website includes an accessories catalog experience with search and filtering controls. The application uses a React frontend, a Python backend, and PostgreSQL; no specific Python framework is stated.',
+      },
+    ],
+    flowSteps: [
+      { label: 'Customer details', detail: 'Enter name and contact information' },
+      { label: 'Vehicle', detail: 'Provide vehicle details' },
+      { label: 'Issue', detail: 'Describe the diagnostic or service need' },
+      { label: 'Preferred time', detail: 'Choose a requested appointment slot' },
+      { label: 'Confirmation', detail: 'Review and submit the appointment request' },
+    ],
+    features: [
+      { title: 'Automotive Services', description: 'Dedicated information for diagnostics, electrical repair, and accessory installation.' },
+      { title: 'Appointment Requests', description: 'A multi-step flow collects customer, vehicle, issue, and preferred-time details.' },
+      { title: 'Accessories Storefront', description: 'A catalog interface with search, category, availability, and sorting controls.' },
+      { title: 'WhatsApp Contact', description: 'Direct messaging options help customers reach the business.' },
+      { title: 'Full-Stack Application', description: 'React frontend, Python backend, and PostgreSQL data storage.' },
+    ],
+    gallery: [
+      'Homepage and service introduction',
+      'Automotive diagnostic services',
+      'Featured accessories and empty catalog state',
+      'Why customers choose the business',
+      'How it works and frequently asked questions',
+      'Contact options and footer',
+      'Services overview',
+      'Service cards and quick actions',
+      'Diagnostic service detail',
+      'Multi-step appointment form',
+      'Accessories storefront and filters',
+    ].map((caption, index) => ({
+      src: `/images/projects/auto-elec-tunis/screenshot-${String(index + 1).padStart(2, '0')}.png`,
+      caption,
+    })),
+  },
+  {
     slug: 'gabsi-dev',
     title: 'Gabsi Dev — Engineering Software Website',
     shortTitle: 'Gabsi Dev',
