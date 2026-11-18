@@ -16,6 +16,7 @@ export const navLinks = [
   { label: 'Projects', href: '/#projects' },
   { label: 'Machine Learning', href: '/#machine-learning' },
   { label: 'n8n Workflows', href: '/#n8n-workflows' },
+  { label: 'Extensions', href: '/#extensions' },
   { label: 'Engineering', href: '/#engineering' },
   { label: 'Certifications', href: '/#certifications' },
   { label: 'About', href: '/#about' },

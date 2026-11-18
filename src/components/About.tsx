@@ -6,7 +6,7 @@ export function About() {
   return (
     <SectionWrapper id="about">
       <SectionHeading
-        index="07"
+        index="08"
         title="About"
       />
 
@@ -80,7 +80,7 @@ export function EngineeringStack() {
   return (
     <SectionWrapper id="stack" className="bg-ink-25 border-y border-ink-100">
       <SectionHeading
-        index="08"
+        index="09"
         title="Engineering Stack"
         description="Technologies and tools I work with — grouped by domain, not by proficiency percentage."
       />

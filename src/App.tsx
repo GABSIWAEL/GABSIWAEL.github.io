@@ -5,6 +5,7 @@ import { SelectedWork } from '@/components/SelectedWork';
 import { ProjectLibrary } from '@/components/ProjectLibrary';
 import { MachineLearningProjects } from '@/components/MachineLearningProjects';
 import { N8nWorkflows } from '@/components/N8nWorkflows';
+import { Extensions } from '@/components/Extensions';
 import { EngineeringNotes } from '@/components/EngineeringNotes';
 import { About, EngineeringStack } from '@/components/About';
 import { Certifications } from '@/components/Certifications';
@@ -100,6 +101,7 @@ function App() {
         <ProjectLibrary onOpenProject={openProject} />
         <MachineLearningProjects onOpenProject={openProject} />
         <N8nWorkflows onOpenProject={openProject} />
+        <Extensions />
         <EngineeringNotes />
         <Certifications />
         <About />

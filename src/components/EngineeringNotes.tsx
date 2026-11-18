@@ -9,7 +9,7 @@ export function EngineeringNotes() {
     <SectionWrapper id="engineering" className="bg-ink-25 border-y border-ink-100">
       <div>
         <SectionHeading
-          index="05"
+          index="06"
           title="Build. Learn. Share."
           description="Technical content on backend engineering, infrastructure, architecture, and DevOps — sharing what I learn by building."
         />

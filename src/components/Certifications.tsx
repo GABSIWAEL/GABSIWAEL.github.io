@@ -7,7 +7,7 @@ export function Certifications() {
   return (
     <SectionWrapper id="certifications" className="bg-ink-25 border-y border-ink-100">
       <SectionHeading
-        index="06"
+        index="07"
         title="Licenses & Certifications"
         description="Professional credentials across data, software development, AI, and English proficiency."
       />
