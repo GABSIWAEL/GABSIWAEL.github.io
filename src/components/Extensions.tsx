@@ -192,6 +192,53 @@ export function Extensions() {
             </div>
           </article>
         </Reveal>
+
+        <Reveal delay={200}>
+          <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
+            <img
+              src="/images/extensions/secretguard/security-dashboard.png"
+              alt="SecretGuard Security Dashboard showing local scan findings and severity counts in Visual Studio Code"
+              loading="lazy"
+              className="aspect-video w-full border-b border-ink-100 bg-ink-950 object-cover object-left-top"
+            />
+
+            <div className="flex flex-1 flex-col p-5">
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide text-ink-400">
+                  <Clock3 size={13} className="text-accent" />
+                  VS Code Extension
+                </span>
+                <span className="text-xs font-mono text-ink-300">Local &amp; offline</span>
+              </div>
+
+              <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
+                SecretGuard
+              </h3>
+              <p className="mt-2 text-sm text-ink-500 text-pretty">
+                Scan source and configuration files for likely hardcoded credentials. Review
+                severity-ranked diagnostics and clickable findings in a dashboard, with scans
+                and finding metadata kept local.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {['Secret Detection', 'Diagnostics', 'Custom Rules', 'Offline Scanning'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-ink-100 px-2.5 py-1 text-[11px] font-mono text-ink-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto flex items-center gap-3 border-t border-ink-50 pt-4">
+                <span className="text-xs text-ink-400">
+                  Available for local development · no source or credential values uploaded
+                </span>
+              </div>
+            </div>
+          </article>
+        </Reveal>
       </div>
     </SectionWrapper>
   );
