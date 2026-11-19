@@ -286,7 +286,7 @@ export const projects: Project[] = [
     shortTitle: 'AI Support',
     tagline: 'An AI-powered customer support platform providing contextual assistance using client-specific data.',
     description:
-      'A customer support platform that uses LLaMA 3.1 with client-specific context to provide accurate, contextual responses — backed by .NET APIs and full observability.',
+      'A customer support platform that uses LLaMA 3.1 with client-specific context to provide accurate, contextual responses — backed by Python APIs and full observability.',
     categories: ['AI', 'Backend', 'DevOps'],
     projectType: 'AI / SaaS',
     year: '2024',
@@ -296,7 +296,7 @@ export const projects: Project[] = [
     featured: true,
     featuredLayout: 'large-left',
     technologies: [
-      'LLaMA 3.1', '.NET', 'Angular', 'Docker', 'NGINX',
+      'LLaMA 3.1', 'Python', 'Angular', 'Docker', 'NGINX',
       'RabbitMQ', 'Prometheus', 'Grafana', 'Elastic',
     ],
     techGroups: [
@@ -309,8 +309,7 @@ export const projects: Project[] = [
       {
         label: 'Backend',
         items: [
-          { name: '.NET', description: 'API layer & service logic' },
-          { name: 'C#', description: 'Primary language' },
+          { name: 'Python', description: 'API layer & service logic' },
         ],
       },
       {
@@ -347,7 +346,7 @@ export const projects: Project[] = [
       'An AI-powered support platform that leverages LLaMA 3.1 to deliver contextual, client-specific responses. The system ingests client data, builds a context layer, and routes queries through an API layer to the model — with full monitoring and observability.',
     whatIBuilt: [
       'Integrated LLaMA 3.1 as the core LLM with client-specific context injection',
-      'Built the .NET API layer handling query routing and context management',
+      'Built the Python API layer handling query routing and context management',
       'Designed the Angular frontend for support agents and end users',
       'Set up Docker-based deployment with NGINX reverse proxy',
       'Implemented monitoring with Prometheus, Grafana, and Elastic',
@@ -359,7 +358,7 @@ export const projects: Project[] = [
     status: '[Add project status]',
     responsibilities: [
       { area: 'AI Integration', detail: 'Integrated LLaMA 3.1 with client-specific context injection' },
-      { area: 'API Architecture', detail: 'Built .NET API layer for query routing and context management' },
+      { area: 'API Architecture', detail: 'Built Python API layer for query routing and context management' },
       { area: 'Context Retrieval', detail: 'Designed the context layer from client data' },
       { area: 'Frontend', detail: 'Built Angular interface for support agents and end users' },
       { area: 'Async Processing', detail: 'Used RabbitMQ workers for long-running model calls' },
@@ -373,7 +372,7 @@ export const projects: Project[] = [
       },
       {
         heading: 'API layer',
-        body: '.NET APIs handle authentication, query routing, context assembly, and model invocation. Long-running calls are offloaded to RabbitMQ workers.',
+        body: 'Python APIs handle authentication, query routing, context assembly, and model invocation. Long-running calls are offloaded to RabbitMQ workers.',
       },
       {
         heading: 'Observability',
@@ -382,7 +381,7 @@ export const projects: Project[] = [
     ],
     flowSteps: [
       { label: 'User', detail: 'Submits a support query' },
-      { label: 'API', detail: '.NET — auth & routing' },
+      { label: 'API', detail: 'Python — auth & routing' },
       { label: 'Context', detail: 'Client-specific context assembly' },
       { label: 'Model', detail: 'LLaMA 3.1 inference' },
       { label: 'Response', detail: 'Contextual answer returned' },
@@ -984,7 +983,7 @@ export const additionalProjects: Project[] = [
     shortTitle: 'TNElectronics',
     tagline: 'An online electronics store with detailed product pages, configurable variants, and streamlined shopping actions.',
     description:
-      'A full-stack e-commerce experience for consumer electronics, built with React and Spring Boot. The storefront organizes products across technology categories and presents detailed product pages with pricing, availability, ratings, configurable options, and shopping actions.',
+      'A full-stack e-commerce experience for consumer electronics, built with React and a Next.js backend. The storefront organizes products across technology categories and presents detailed product pages with pricing, availability, ratings, configurable options, and shopping actions.',
     categories: ['Frontend', 'Backend', 'E-commerce'],
     projectType: 'E-commerce / Electronics Retail',
     year: '2026',
@@ -993,7 +992,7 @@ export const additionalProjects: Project[] = [
     heroImage: '/images/projects/tn-electronics/screenshot-01.png',
     heroImageAspect: 'aspect-[2/1]',
     featured: false,
-    technologies: ['React', 'Spring Boot'],
+    technologies: ['React', 'Next.js'],
     techGroups: [
       {
         label: 'Frontend',
@@ -1001,12 +1000,12 @@ export const additionalProjects: Project[] = [
       },
       {
         label: 'Backend',
-        items: [{ name: 'Spring Boot', description: 'Application backend for the e-commerce platform' }],
+        items: [{ name: 'Next.js', description: 'Application backend for the e-commerce platform' }],
       },
     ],
     links: [],
     overview:
-      'TNElectronics is an online store for consumer technology, with navigation for computers, gaming, TV and audio, mobile devices, accessories, monitors, smartwatches, tablets, printers, storage, and promotions. The supplied product page shows a Xiaomi smartphone with ratings, limited-stock status, price and discount, storage and color choices, quantity controls, add-to-cart and buy-now actions, plus favorites and product comparison. The project is built with React and Spring Boot.',
+      'TNElectronics is an online store for consumer technology, with navigation for computers, gaming, TV and audio, mobile devices, accessories, monitors, smartwatches, tablets, printers, storage, and promotions. The supplied product page shows a Xiaomi smartphone with ratings, limited-stock status, price and discount, storage and color choices, quantity controls, add-to-cart and buy-now actions, plus favorites and product comparison. The project is built with React and a Next.js backend.',
     whatIBuilt: [
       'Built a React storefront with clear navigation across consumer-electronics categories',
       'Created category listings with product filters, sorting, and grid or list browsing',
@@ -1014,13 +1013,13 @@ export const additionalProjects: Project[] = [
       'Added product variant selection for storage capacity and color',
       'Added cart management, promo-code entry, and checkout screens for customer and delivery details',
       'Presented quantity controls and add-to-cart, buy-now, favorites, and comparison actions',
-      'Implemented the application backend with Spring Boot',
+      'Implemented the application backend with Next.js',
     ],
     role: 'Full-Stack Developer',
     responsibilities: [
       { area: 'Storefront', detail: 'Built the React customer experience for browsing electronics and viewing product information' },
       { area: 'Product Details', detail: 'Presented pricing, ratings, availability, and selectable product options' },
-      { area: 'Backend', detail: 'Developed the application backend with Spring Boot' },
+      { area: 'Backend', detail: 'Developed the application backend with Next.js' },
     ],
     sections: [
       {
@@ -1033,7 +1032,7 @@ export const additionalProjects: Project[] = [
       },
       {
         heading: 'Application stack',
-        body: 'The customer-facing interface is built with React and the application backend uses Spring Boot.',
+        body: 'The customer-facing interface is built with React and the application backend uses Next.js.',
       },
     ],
     features: [
@@ -1041,7 +1040,7 @@ export const additionalProjects: Project[] = [
       { title: 'Product Details', description: 'Review product imagery, descriptions, specifications, ratings, pricing, and stock status.' },
       { title: 'Configurable Options', description: 'Select product variants such as storage capacity and color.' },
       { title: 'Shopping Actions', description: 'Set quantity, add a product to the cart, buy now, save favorites, or compare products.' },
-      { title: 'Full-Stack Application', description: 'React storefront backed by a Spring Boot application.' },
+      { title: 'Full-Stack Application', description: 'React storefront backed by a Next.js application.' },
     ],
     gallery: [
       { src: '/images/projects/tn-electronics/screenshot-01.png', caption: 'TNElectronics storefront homepage' },
