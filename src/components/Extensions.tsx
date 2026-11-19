@@ -18,6 +18,52 @@ export function Extensions() {
         <Reveal delay={50}>
           <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
             <img
+              src="/images/extensions/docker-manager/docker-manager.png"
+              alt="Docker Manager dashboard showing containers and Docker resource controls in Visual Studio Code"
+              loading="lazy"
+              className="aspect-video w-full border-b border-ink-100 bg-ink-950 object-cover object-top"
+            />
+
+            <div className="flex flex-1 flex-col p-5">
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide text-ink-400">
+                  <Clock3 size={13} className="text-accent" />
+                  VS Code Extension
+                </span>
+                <span className="text-xs font-mono text-ink-300">v0.1.0</span>
+              </div>
+
+              <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
+                Docker Manager
+              </h3>
+              <p className="mt-2 text-sm text-ink-500 text-pretty">
+                Manage Docker containers, images, volumes, networks, and Compose projects
+                directly from VS Code with monitoring, logs, and lifecycle actions.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {['Docker CLI', 'Containers', 'Compose', 'Monitoring'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-ink-100 px-2.5 py-1 text-[11px] font-mono text-ink-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto flex items-center gap-3 border-t border-ink-50 pt-4">
+                <span className="text-xs text-ink-400">
+                  Secure extension-host Docker operations
+                </span>
+              </div>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={100}>
+          <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
+            <img
               src="/images/extensions/api-tester-pro/api-tester-pro.png"
               alt="API Tester Pro showing a REST request editor and response headers in Visual Studio Code"
               loading="lazy"
@@ -76,7 +122,7 @@ export function Extensions() {
           </article>
         </Reveal>
 
-        <Reveal delay={100}>
+        <Reveal delay={150}>
           <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
             <img
               src="/images/extensions/mini-pomodoro/timer-panel.png"
