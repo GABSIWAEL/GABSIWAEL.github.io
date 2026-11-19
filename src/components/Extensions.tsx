@@ -253,6 +253,52 @@ export function Extensions() {
             </div>
           </article>
         </Reveal>
+
+        <Reveal delay={250}>
+          <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
+            <img
+              src="/images/extensions/sql-detective/sql-detective-dashboard.png"
+              alt="SQL Detective dashboard showing static SQL analysis findings and severity counts in Visual Studio Code"
+              loading="lazy"
+              className="aspect-video w-full border-b border-ink-100 bg-ink-950 object-cover object-center"
+            />
+
+            <div className="flex flex-1 flex-col p-5">
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide text-ink-400">
+                  <Clock3 size={13} className="text-accent" />
+                  VS Code Extension
+                </span>
+                <span className="text-xs font-mono text-ink-300">Local analysis</span>
+              </div>
+
+              <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
+                SQL Detective
+              </h3>
+              <p className="mt-2 text-sm text-ink-500 text-pretty">
+                Catch common SQL performance and safety concerns with real-time diagnostics,
+                Quick Fix recommendations, and a dashboard for reviewing findings across files.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {['Static SQL Analysis', 'Diagnostics', 'Quick Fixes', 'Dashboard'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-ink-100 px-2.5 py-1 text-[11px] font-mono text-ink-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-auto border-t border-ink-50 pt-4">
+                <span className="text-xs text-ink-400">
+                  Analyzes SQL locally · does not run queries or connect to databases
+                </span>
+              </div>
+            </div>
+          </article>
+        </Reveal>
       </div>
     </SectionWrapper>
   );
