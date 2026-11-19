@@ -4,6 +4,7 @@ import { Reveal } from './Reveal';
 
 const marketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.mini-pomodoro';
 const apiTesterMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.api-tester-pro';
+const dockerMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx-docker';
 
 export function Extensions() {
   return (
@@ -52,11 +53,20 @@ export function Extensions() {
                 ))}
               </div>
 
-              <div className="mt-auto flex items-center gap-3 border-t border-ink-50 pt-4">
-                <span className="text-xs text-ink-400">
-                  Secure extension-host Docker operations
-                </span>
+              <div className="mt-5 flex items-center gap-3 border-t border-ink-50 pt-4">
+                <span className="text-xs text-ink-400">Available on Visual Studio Marketplace</span>
               </div>
+
+              <a
+                href={dockerMarketplaceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+              >
+                View on Marketplace
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                <ArrowUpRight size={13} className="ml-auto" />
+              </a>
             </div>
           </article>
         </Reveal>
