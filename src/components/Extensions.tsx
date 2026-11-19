@@ -6,6 +6,7 @@ const marketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vend
 const apiTesterMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.api-tester-pro';
 const dockerMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx-docker';
 const secretGuardMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx';
+const sqlDetectiveMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.sql-detective';
 
 export function Extensions() {
   return (
@@ -296,6 +297,17 @@ export function Extensions() {
                   Analyzes SQL locally · does not run queries or connect to databases
                 </span>
               </div>
+
+              <a
+                href={sqlDetectiveMarketplaceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+              >
+                View on Marketplace
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                <ArrowUpRight size={13} className="ml-auto" />
+              </a>
             </div>
           </article>
         </Reveal>
