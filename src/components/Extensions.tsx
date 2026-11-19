@@ -5,6 +5,7 @@ import { Reveal } from './Reveal';
 const marketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.mini-pomodoro';
 const apiTesterMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.api-tester-pro';
 const dockerMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx-docker';
+const secretGuardMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx';
 
 export function Extensions() {
   return (
@@ -197,7 +198,7 @@ export function Extensions() {
           <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
             <img
               src="/images/extensions/secretguard/security-dashboard.png"
-              alt="SecretGuard Security Dashboard showing local scan findings and severity counts in Visual Studio Code"
+              alt="Vendayx SecretGuard dashboard showing local scan findings and severity counts in Visual Studio Code"
               loading="lazy"
               className="aspect-video w-full border-b border-ink-100 bg-ink-950 object-cover object-left-top"
             />
@@ -212,7 +213,7 @@ export function Extensions() {
               </div>
 
               <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
-                SecretGuard
+                Vendayx SecretGuard
               </h3>
               <p className="mt-2 text-sm text-ink-500 text-pretty">
                 Scan source and configuration files for likely hardcoded credentials. Review
@@ -231,11 +232,24 @@ export function Extensions() {
                 ))}
               </div>
 
-              <div className="mt-auto flex items-center gap-3 border-t border-ink-50 pt-4">
-                <span className="text-xs text-ink-400">
-                  Available for local development · no source or credential values uploaded
+              <div className="flex flex-col gap-1 border-t border-ink-50 pt-4 mt-5">
+                <span className="text-xs text-ink-400">Publisher ID: vendayx</span>
+                <span className="text-xs font-mono text-ink-400">Extension ID: vendayx.vendayx</span>
+                <span className="pt-1 text-xs text-ink-400">
+                  Scans run locally · no source or credential values uploaded
                 </span>
               </div>
+
+              <a
+                href={secretGuardMarketplaceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+              >
+                View on Marketplace
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                <ArrowUpRight size={13} className="ml-auto" />
+              </a>
             </div>
           </article>
         </Reveal>
