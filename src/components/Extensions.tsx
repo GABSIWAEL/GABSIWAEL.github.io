@@ -3,6 +3,7 @@ import { SectionHeading, SectionWrapper } from './SectionHeading';
 import { Reveal } from './Reveal';
 
 const marketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.mini-pomodoro';
+const apiTesterMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.api-tester-pro';
 
 export function Extensions() {
   return (
@@ -29,9 +30,7 @@ export function Extensions() {
                   <Clock3 size={13} className="text-accent" />
                   VS Code Extension
                 </span>
-                <span className="border border-amber-200 bg-amber-50 px-2 py-1 text-[11px] font-mono text-amber-700">
-                  In verification
-                </span>
+                <span className="text-xs font-mono text-ink-300">v1.0.0</span>
               </div>
 
               <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
@@ -53,11 +52,26 @@ export function Extensions() {
                 ))}
               </div>
 
-              <div className="mt-auto border-t border-ink-50 pt-4">
-                <span className="text-xs text-ink-400">
-                  Awaiting Microsoft Marketplace verification
-                </span>
+              <div className="mt-5 flex items-center gap-3 border-t border-ink-50 pt-4">
+                <img
+                  src="/images/extensions/api-tester-pro/marketplace-listing.png"
+                  alt=""
+                  loading="lazy"
+                  className="h-12 w-20 shrink-0 border border-ink-100 bg-ink-950 object-cover object-top"
+                />
+                <span className="text-xs text-ink-400">Available on Visual Studio Marketplace</span>
               </div>
+
+              <a
+                href={apiTesterMarketplaceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+              >
+                View on Marketplace
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                <ArrowUpRight size={13} className="ml-auto" />
+              </a>
             </div>
           </article>
         </Reveal>
