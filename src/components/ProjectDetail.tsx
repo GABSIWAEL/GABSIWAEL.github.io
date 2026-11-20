@@ -20,6 +20,15 @@ interface ProjectDetailProps {
 
 export function ProjectDetail({ slug, onBack, onNavigate }: ProjectDetailProps) {
   const project = getProject(slug);
+  const isExtension = project?.categories.includes('VS Code Extension') ?? false;
+
+  const backToLibrary = useCallback(() => {
+    window.location.hash = '';
+    setTimeout(() => {
+      const el = document.getElementById(isExtension ? 'extensions' : 'projects');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }, [isExtension]);
 
   if (!project) {
     return (
@@ -43,14 +52,6 @@ export function ProjectDetail({ slug, onBack, onNavigate }: ProjectDetailProps) 
     .map((s) => allProjects.find((p) => p.slug === s))
     .filter((p): p is Project => p !== undefined && p.slug !== slug)
     .slice(0, 3);
-
-  const backToLibrary = useCallback(() => {
-    window.location.hash = '';
-    setTimeout(() => {
-      const el = document.getElementById('projects');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
-    }, 100);
-  }, []);
 
   let sectionIndex = 0;
   const nextIndex = () => String(++sectionIndex).padStart(2, '0');
@@ -396,6 +397,7 @@ export function ProjectDetail({ slug, onBack, onNavigate }: ProjectDetailProps) 
           related={related}
           onNavigate={onNavigate}
           onBackToLibrary={backToLibrary}
+          backLabel={isExtension ? 'Back to Extensions' : undefined}
         />
       </div>
     </article>

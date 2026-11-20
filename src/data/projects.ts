@@ -1,3 +1,5 @@
+import { extensionProjects } from './extensionProjects';
+
 export interface ProjectLink {
   label: string;
   href: string;
@@ -2598,7 +2600,7 @@ export const additionalProjects: Project[] = [
   },
 ];
 
-export const allProjects = [...projects, ...additionalProjects];
+export const allProjects = [...projects, ...additionalProjects, ...extensionProjects];
 export const machineLearningProjects = allProjects.filter((project) =>
   project.categories.includes('Machine Learning')
 );
@@ -2607,7 +2609,8 @@ export const n8nAutomationProjects = allProjects.filter((project) =>
 );
 export const projectLibraryProjects = allProjects.filter((project) =>
   !project.categories.includes('Machine Learning') &&
-  !project.categories.includes('Automation')
+  !project.categories.includes('Automation') &&
+  !project.categories.includes('VS Code Extension')
 ).sort((a, b) => Number(a.thumbnailType === 'illustration') - Number(b.thumbnailType === 'illustration'));
 
 export function getProject(slug: string): Project | undefined {

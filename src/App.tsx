@@ -101,7 +101,7 @@ function App() {
         <ProjectLibrary onOpenProject={openProject} />
         <MachineLearningProjects onOpenProject={openProject} />
         <N8nWorkflows onOpenProject={openProject} />
-        <Extensions />
+        <Extensions onOpenProject={openProject} />
         <EngineeringNotes />
         <Certifications />
         <About />

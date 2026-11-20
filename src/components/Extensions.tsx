@@ -7,8 +7,9 @@ const apiTesterMarketplaceUrl = 'https://marketplace.visualstudio.com/items?item
 const dockerMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx-docker';
 const secretGuardMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.vendayx';
 const sqlDetectiveMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.sql-detective';
+const logLensMarketplaceUrl = 'https://marketplace.visualstudio.com/items?itemName=vendayx.log-lens-analyzer';
 
-export function Extensions() {
+export function Extensions({ onOpenProject }: { onOpenProject: (slug: string) => void }) {
   return (
     <SectionWrapper id="extensions" className="bg-ink-25 border-y border-ink-100">
       <SectionHeading
@@ -63,12 +64,13 @@ export function Extensions() {
                 href={dockerMarketplaceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
               >
                 View on Marketplace
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 <ArrowUpRight size={13} className="ml-auto" />
               </a>
+              <ExtensionDetailsLink slug="docker-manager" onOpenProject={onOpenProject} />
             </div>
           </article>
         </Reveal>
@@ -124,12 +126,13 @@ export function Extensions() {
                 href={apiTesterMarketplaceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
               >
                 View on Marketplace
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 <ArrowUpRight size={13} className="ml-auto" />
               </a>
+              <ExtensionDetailsLink slug="api-tester-pro" onOpenProject={onOpenProject} />
             </div>
           </article>
         </Reveal>
@@ -185,12 +188,13 @@ export function Extensions() {
                 href={marketplaceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
               >
                 View on Marketplace
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 <ArrowUpRight size={13} className="ml-auto" />
               </a>
+              <ExtensionDetailsLink slug="mini-pomodoro" onOpenProject={onOpenProject} />
             </div>
           </article>
         </Reveal>
@@ -245,12 +249,13 @@ export function Extensions() {
                 href={secretGuardMarketplaceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
               >
                 View on Marketplace
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 <ArrowUpRight size={13} className="ml-auto" />
               </a>
+              <ExtensionDetailsLink slug="secretguard" onOpenProject={onOpenProject} />
             </div>
           </article>
         </Reveal>
@@ -292,7 +297,7 @@ export function Extensions() {
                 ))}
               </div>
 
-              <div className="mt-auto border-t border-ink-50 pt-4">
+              <div className="border-t border-ink-50 pt-4">
                 <span className="text-xs text-ink-400">
                   Analyzes SQL locally · does not run queries or connect to databases
                 </span>
@@ -302,16 +307,94 @@ export function Extensions() {
                 href={sqlDetectiveMarketplaceUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
               >
                 View on Marketplace
                 <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
                 <ArrowUpRight size={13} className="ml-auto" />
               </a>
+              <ExtensionDetailsLink slug="sql-detective" onOpenProject={onOpenProject} />
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={300}>
+          <article className="group flex h-full flex-col border border-ink-100 bg-ink-0 transition-shadow duration-500 ease-out-expo hover:shadow-lg hover:shadow-ink-950/5">
+            <img
+              src="/images/extensions/log-lens/log-lens-viewer.png"
+              alt="Log Lens viewer showing parsed log levels, statistics, timeline, and searchable log entries in Visual Studio Code"
+              loading="lazy"
+              className="aspect-video w-full border-b border-ink-100 bg-ink-950 object-cover object-left-top"
+            />
+
+            <div className="flex flex-1 flex-col p-5">
+              <div className="flex items-center justify-between gap-3">
+                <span className="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-wide text-ink-400">
+                  <Clock3 size={13} className="text-accent" />
+                  VS Code Extension
+                </span>
+                <span className="text-xs font-mono text-ink-300">Local &amp; offline</span>
+              </div>
+
+              <h3 className="mt-4 text-base font-semibold tracking-tight text-ink-950 group-hover:text-accent transition-colors duration-300">
+                Log Lens
+              </h3>
+              <p className="mt-2 text-sm text-ink-500 text-pretty">
+                Inspect large log files with level-aware filters, search, full-scan statistics,
+                error grouping, a clickable timeline, and live tailing. Worker-based parsing
+                and virtualized rows help keep large files manageable.
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {['Log Analysis', 'Live Tail', 'Sensitive Data Masking', 'JSON & CSV Export'].map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-ink-100 px-2.5 py-1 text-[11px] font-mono text-ink-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="border-t border-ink-50 pt-4">
+                <span className="text-xs text-ink-400">
+                  Read-only viewer · logs stay on your machine · no network calls or telemetry
+                </span>
+              </div>
+              <a
+                href={logLensMarketplaceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+              >
+                View on Marketplace
+                <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+                <ArrowUpRight size={13} className="ml-auto" />
+              </a>
+              <ExtensionDetailsLink slug="log-lens" onOpenProject={onOpenProject} />
             </div>
           </article>
         </Reveal>
       </div>
     </SectionWrapper>
+  );
+}
+
+function ExtensionDetailsLink({
+  slug,
+  onOpenProject,
+}: {
+  slug: string;
+  onOpenProject: (slug: string) => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={() => onOpenProject(slug)}
+      className="mt-auto inline-flex items-center gap-1.5 pt-5 text-sm font-medium text-ink-700 hover:text-accent transition-colors duration-300"
+    >
+      View project details
+      <ArrowRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5" />
+    </button>
   );
 }

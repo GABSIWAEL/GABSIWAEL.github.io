@@ -9,6 +9,7 @@ interface ProjectNavigationProps {
   related: Project[];
   onNavigate: (slug: string) => void;
   onBackToLibrary: () => void;
+  backLabel?: string;
 }
 
 export function ProjectNavigation({
@@ -18,6 +19,7 @@ export function ProjectNavigation({
   related,
   onNavigate,
   onBackToLibrary,
+  backLabel = 'Back to Project Library',
 }: ProjectNavigationProps) {
   return (
     <div className="mt-24 border-t border-ink-100 pt-16">
@@ -51,7 +53,7 @@ export function ProjectNavigation({
             className="group inline-flex items-center gap-2 text-sm font-medium text-ink-500 hover:text-ink-950 transition-colors duration-300"
           >
             <Grid2x2 size={15} className="text-ink-300 group-hover:text-ink-950 transition-colors duration-300" />
-            Back to Project Library
+            {backLabel}
           </button>
         </div>
       </Reveal>
